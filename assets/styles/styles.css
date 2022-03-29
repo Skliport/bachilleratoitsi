@@ -1,0 +1,19 @@
+/** FONT IMPORT **/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+
+/** MAIN COLORS **/
+:root {
+    --color-blue-primary: #15429e;
+    --color-blue-accent: #90cdff;
+    --color-blue-dark: #0f436f;
+    --color-blue-light: #c8e6ff;
+    --background-color: #ffffff;
+}
+
+/** 
+    FONT CONFIG: 
+    Best practice to apply the font to the whole document
+**/
+html * {
+    font-family: 'Open Sans', sans-serif !important;
+}
