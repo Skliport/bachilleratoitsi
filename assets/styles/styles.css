@@ -1,225 +1,297 @@
-    /** FONT IMPORT **/
-    
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
-    /** MAIN COLORS **/
-    
-     :root {
-        --color-blue-primary: #15429e;
-        --color-blue-accent: #90cdff;
-        --color-blue-dark: #0f436f;
-        --color-blue-light: #c8e6ff;
-        --background-color: #ffffff;
-    }
-    /** 
-    FONT CONFIG: 
+/** FONT IMPORT **/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+/** MAIN COLORS **/
+
+:root {
+    --color-blue-primary: #15429e;
+    --color-blue-accent: #90cdff;
+    --color-blue-dark: #0f436f;
+    --color-blue-light: #c8e6ff;
+    --background-color: #ffffff;
+}
+/**
+    FONT CONFIG:
     Best practice to apply the font to the whole document
 **/
-    
-    html * {
-        font-family: 'Open Sans', sans-serif !important;
-    }
-    
-    .bg {
-        width: 100%;
-        z-index: 0;
-    }
-    
-    .nav-link {
-        text-transform: uppercase !important;
-        font-weight: bold;
-    }
-    
-    .card-icons {
-        margin-top: -3em !important;
-        height: 100%;
-    }
-    
-    .border-right {
-        border-right: 1px solid rgba(0, 0, 0, 0.5);
-        height: 100px;
-    }
-    
-    .profile {
-        background-color: rgb(142, 141, 141);
-        margin-top: 90px;
-        width: 750px;
-        margin-left: -140px;
-        position: absolute;
-    }
-    
-    .list {
-        list-style: none;
-        padding: 0;
-    }
-    
-    .list2 {
-        padding-left: 1.3em;
-    }
-    
-    .list2:before {
-        content: "\f00c";
-        /* FontAwesome Unicode */
-        font-family: FontAwesome;
-        display: inline-block;
-        margin-left: -1.3em;
-        /* same as padding-left set on li */
-        width: 1.3em;
-        /* same as padding-left set on li */
-        color: green;
-    }
-    
-    .parent {
-        position: relative;
-        top: 0;
-        left: 0;
-        height: 550px;
-    }
-    
-    .image1 {
-        position: relative;
-        height: 400px;
-        width: 500px;
-        margin-left: 30px;
-        margin-top: 20px;
-    }
-    
-    .image1-year {
-        position: relative;
-        top: 0;
-        left: 0;
-        float: right;
-        height: 320px;
-        width: 430px;
-    }
-    
-    .image2-year {
-        position: absolute;
-        top: 250px;
-        left: 80px;
-        height: 190px;
-    }
-    
-    .image3-year {
-        position: absolute;
-        top: 350px;
-        left: 390px;
-        height: 150px;
-    }
-    
-    .cards-wrapper {
-        display: flex;
-        justify-content: center;
-    }
-    
+
+html * {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.bg {
+    width: 100%;
+    z-index: 0;
+}
+
+.nav-link {
+    text-transform: uppercase !important;
+    font-weight: bold;
+}
+
+.card-icons {
+    margin-top: -3em !important;
+    height: 100%;
+}
+
+.border-right {
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    height: 100px;
+}
+
+.profile {
+    background-color: rgb(142, 141, 141);
+    margin-top: 90px;
+    width: 750px;
+    margin-left: -140px;
+    position: absolute;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list2 {
+    padding-left: 1.3em;
+}
+
+.list2:before {
+    content: '\f00c';
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    /* same as padding-left set on li */
+    width: 1.3em;
+    /* same as padding-left set on li */
+    color: green;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 550px;
+}
+
+.image1 {
+    position: relative;
+    height: 400px;
+    width: 500px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.image1-year {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: right;
+    height: 320px;
+    width: 430px;
+}
+
+.image2-year {
+    position: absolute;
+    top: 250px;
+    left: 80px;
+    height: 190px;
+}
+
+.image3-year {
+    position: absolute;
+    top: 350px;
+    left: 390px;
+    height: 150px;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
     .card img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    
-    .card {
-        margin: 0 0.5em;
-        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-        border: none;
-        border-radius: 0;
-    }
-    
-    .carousel-inner {
-        padding: 1em;
-    }
-    
-    .carousel-control-prev,
-    .carousel-control-next {
-        background-color: #e1e1e1;
-        width: 5vh;
-        height: 5vh;
-        border-radius: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-    @media (min-width: 768px) {
-        .card img {
-            width: 100%;
-            height: 300px;
-            object-fit: contain;
-        }
-    }
-    
-    .image-carousel {
-        height: 220px;
         width: 100%;
-        object-fit: cover;
-        object-position: center;
+        height: 300px;
+        object-fit: contain;
     }
-    
-    .card-text {
-        text-align: justify !important;
+}
+
+.image-carousel {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-text {
+    text-align: justify !important;
+}
+
+.docente-img {
+    border-radius: 50%;
+    height: 130px;
+    width: 150px;
+    object-fit: cover;
+    object-position: 1% 10%;
+}
+
+.cursos {
+    background-color: wheat;
+    border: 0.1px solid black;
+    height: auto;
+}
+
+.bg-card-body {
+    position: relative;
+    text-align: center;
+}
+
+.bg-card-1 {
+    background: url('/assets/images/SJ.jpg');
+}
+
+.bg-card-2 {
+    background: url('/assets/images/FHK.jpg');
+}
+
+.bg-card-3 {
+    background: url('/assets/images/ET.jpg');
+}
+
+.bg-card-1,
+.bg-card-2,
+.bg-card-3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-card-1::after,
+.bg-card-2::after,
+.bg-card-3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.65;
+    background-color: #77734e;
+}
+
+.bg-card-body:hover .bg-card-1,
+.bg-card-body:hover .bg-card-2,
+.bg-card-body:hover .bg-card-3 {
+    opacity: 1;
+}
+
+.bg-card-body:hover .card-title,
+.bg-card-body:hover .card-text,
+.bg-card-body:hover .bg-card-icon {
+    position: relative;
+    z-index: 10;
+    color: #ffffff !important;
+}
+
+.bg-card-icon {
+
+}
+
+.contact-info {
+    margin-left: 7em;
+}
+
+.footer {
+    margin-top: 8em !important;
+}
+
+.carousel-inner {
+    height: 600px !important;
+}
+
+.card-principal {
+    font-size: small;
+}
+
+.bi {
+    font-size: 3rem;
+}
+
+.img-general {
+    width: 100%;
+}
+
+.docente-nombre {
+    font-weight: bold;
+}
+
+.docente-cargo {
+    font-weight: 400;
+    font-size: small;
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
     }
-    
-    .docente-img {
-        border-radius: 50%;
-        height: 130px;
-        width: 150px;
-        object-fit: cover;
-        object-position: 1% 10%;
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 0.7;
     }
-    
-    .cursos {
-        background-color: wheat;
-        border: 0.1px solid black;
-        height: auto;
+}
+@keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
     }
-    
-    .bg-card-1:hover {
-        background: url('/assets/images/sj.jpg') no-repeat;
-        background-size: cover;
-        opacity: 0.8;
-        color: black;
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 0.7;
     }
-    
-    .bg-card-2:hover {
-        background: url('/assets/images/FHK.jpg') no-repeat;
-        background-size: cover;
-        opacity: 0.8;
-        color: black;
-    }
-    
-    .bg-card-3:hover {
-        background: url('/assets/images/ET.jpg  ') no-repeat;
-        background-size: cover;
-        opacity: 0.8;
-        color: black;
-    }
-    
-    .contact-info {
-        margin-left: 7em;
-    }
-    
-    .footer {
-        margin-top: 8em !important;
-    }
-    
-    .carousel-inner {
-        height: 600px !important;
-    }
-    
-    .card-principal {
-        font-size: small;
-    }
-    
-    .bi {
-        font-size: 3rem;
-    }
-    
-    .img-general {
-        width: 100%;
-    }
-    
-    .docente-nombre {
-        font-weight: bold;
-    }
-    
-    .docente-cargo {
-        font-weight: 400;
-        font-size: small;
-    }
+}
