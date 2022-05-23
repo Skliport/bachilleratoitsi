@@ -38,7 +38,7 @@
 
     <body>
         <!-- Nabvar -->
-        <nav
+        <nav id="navbar"
             class="navbar navbar-expand-lg navbar-dark fixed-top shadow-5-strong py-3"
         >
             <div class="container-fluid">
@@ -105,7 +105,7 @@
 
         <!-- NUESTRO BACHILLERATO -->
         <div class="container">
-            <div class="card card-icons">
+            <div class="card card-icons seccion1 py-4 px-2">
                 <div class="row d-flex align-items-center mx-3 h-100">
                     <div class="row">
                         <div
@@ -157,10 +157,10 @@
             <!-- FIN NUESTRO BACHILLERATO -->
 
             <!-- PERFIL DE INGRESO -->
-            <div>
-                <section class="row mt-5" id="perfil_ingreso">
-                    <div class="text-center">
-                        <h1>Acerca de nuestro bachillerato</h1>
+            <div id="perfil_ingreso">
+                <section class="row mt-5">
+                    <div class="text-center mb-5">
+                        <h1 class="mb-5">Acerca de nuestro bachillerato</h1>
                         <p>
                             La especialidad en Infraestructura Tecnológica y
                             Servicios Informáticos (ITSI) proporciona al
@@ -222,8 +222,8 @@
                 <!-- FIN PERFIL DE INGRESO -->
 
                 <!-- AÑOS DE ESTUDIO -->
-                <div>
-                    <div class="row mt-5" id="anios_estudio">
+                <div id="anios_estudio">
+                    <div class="row mt-5">
                         <div class="col">
                             <div class="w3-container">
                                 <h2>Años de estudio</h2>
@@ -313,15 +313,15 @@
                             <div class="container">
                                 <div class="parent">
                                     <img
-                                        class="image1-year d-flex justify-content-end"
+                                        class="image1-year d-flex justify-content-end image-year"
                                         src="/assets/images/primero.jpg "
                                     />
                                     <img
-                                        class="image3-year"
+                                        class="image3-year image-year"
                                         src="assets/images/segundo.jpeg "
                                     />
                                     <img
-                                        class="image2-year"
+                                        class="image2-year image-year"
                                         src="assets/images/JAJA.jpg "
                                     />
                                 </div>
@@ -331,8 +331,8 @@
                 </div>
             </div>
             <!--FERIAS GENERAL-->
-            <div>
-                <div class="row" id="ferias ">
+            <div id="ferias">
+                <div class="row">
                     <div class="col-4">
                         <img
                             src="assets/images/ferias.jpg "
@@ -541,8 +541,8 @@
             <!--END FERIAS-->
 
             <!--DOCENTES GENERAL-->
-            <div>
-                <div class="row mt-5" id="docentes ">
+            <div id="docentes">
+                <div class="row mt-5">
                     <div class="col-8">
                         <h1>DOCENTES</h1>
                         <p>
@@ -679,8 +679,8 @@
             <!--FIN DOCENTES-->
 
             <!--CURSOS GENERAL-->
-            <div>
-                <div class="row mt-5" id="cursos ">
+            <div id="cursos">
+                <div class="row mt-5">
                     <div class="col-4 mt-5">
                         <img
                             src="assets/images/cursos.jpg "
@@ -712,7 +712,9 @@
                         <div class="card-body bg-card-body p-5">
                             <div class="bg-card-1"></div>
                             <i class="bi bi-mortarboard-fill bg-card-icon"></i>
-                            <h4 class="card-title fw-bold my-3">CURSOS INSAFORP</h4>
+                            <h4 class="card-title fw-bold my-3">
+                                CURSOS INSAFORP
+                            </h4>
                             <p class="card-text">
                                 En los ultimos años los cursos de INSAFORP han
                                 sido de mucha ayuda para los alumnos, brindando
@@ -729,7 +731,9 @@
                         <div class="card-body bg-card-body p-5">
                             <div class="bg-card-2"></div>
                             <i class="bi bi-people-fill bg-card-icon"></i>
-                            <h4 class="card-title fw-bold my-3">FUNDACIÓN HELLER KELLER</h4>
+                            <h4 class="card-title fw-bold my-3">
+                                FUNDACIÓN HELLER KELLER
+                            </h4>
                             <p class="card-text">
                                 La Fundación Hellen Keller El Salvador, desde el
                                 inicio del bachillerato ha participado en las
@@ -850,5 +854,8 @@
             }
             document.getElementById('FirstYear').style.display = 'block';
         </script>
+        <!--Custom scripts-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
