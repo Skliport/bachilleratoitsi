@@ -1,35 +1,472 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8" />
-    <title>Bachillerato ITSI</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!--TODO: SEO-->
-
-    <!-- Bootstrap related -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-
-    <!--Custom styles-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link href="assets/styles/styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!--Content here-->
+    <link rel="icon" type="image/x-icon" href="/assets/images/ITSI logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <title>Bachillerato ITSI</title>
+</head>
 
-    <!--Bootstrap Scripts-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+<body>
+    <!-- Nabvar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-5-strong py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/ITSI logo.png" alt="" width="30" height="30" /> ITSI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a style="color: white" class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#perfil_ingreso">INGRESO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#anios_estudio">A&Ntilde;OS DE ESTUDIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ferias">FERIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#docentes">DOCENTES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">CURSOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- FIN Navbar -->
 
-    <!--Custom scripts-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+    <!-- IMAGEN HOME -->
+
+    <img class="bg" src="assets/images/itsi.png" />
+    <!-- FIN IMAGEN HOME -->
+
+    <!-- NUESTRO BACHILLERATO -->
+    <div class="container">
+        <div class="card card-icons">
+            <div class="row d-flex align-items-center mx-3 h-100">
+                <div class="row">
+                    <div class="col-4 border-right d-flex align-items-center">
+                        <div class="row">
+                            <div class="col-3"><i class="bi bi-person-workspace"></i></div>
+                            <div class="col-9 d-flex align-items-center card-principal">S&eacute; parte de la gran familia de inform&aacute;ticos de C.E. INSA</div>
+                        </div>
+                    </div>
+                    <div class="col-4 border-right d-flex align-items-center">
+                        <div class="row p-3">
+                            <div class="col-3"><i class="bi bi-mortarboard-fill "></i></div>
+                            <div class="col-9 d-flex align-items-center card-principal">Obtén tu titulo de Bachiller T&eacute;cnico Vocacional en ITSI.</div>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex align-items-center">
+                        <div class="row p-3">
+                            <div class="col-3"><i class="bi bi-pc-display"></i></div>
+                            <div class="col-9 d-flex align-items-center card-principal">Adquiere conocimientos en Desarrollo de Software y Gestión de Seguridad Informática.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN NUESTRO BACHILLERATO -->
+
+        <!-- PERFIL DE INGRESO -->
+        <div>
+            <section class="row mt-5" id="perfil_ingreso">
+                <div class="text-center">
+                    <h1>Acerca de nuestro bachillerato</h1>
+                    <p>
+                        La especialidad en Infraestructura Tecnológica y Servicios Informáticos (ITSI) proporciona al estudiante las herramientas necesarias para desarrollar habilidades y destrezas en <br /> mantenimiento preventivo y correctivo de computadoras,
+                        configuración y mantenimiento de los equipos informáticos en estado óptimo para su buen desempeño, instalación y administración de redes locales; también es capaz de proveer soporte técnico a las empresas e implementar políticas
+                        de procedimientos técnicos
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div>
+                            <img class="image1" src="assets/images/NUEVO INGRESO.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="profile">
+                        <div class="container">
+                            <h1>Perfil de ingreso</h1>
+                            <p>
+                                Contamos con 3 secciones para los estudiantes de nuevo ingreso, en la cual se tiene estimado un aproximado de 150-200 aspirantes para la prueba de admisión de los nuevos estudiantes de primer año de nuestra especialidad.
+                            </p>
+                            <ul class="list">
+                                <li class="list2">
+                                    Haber culminado y aprobado noveno grado de educación básica
+                                </li>
+                                <li class="list2">
+                                    Poseer un interes por el àrea informatica y mínimo conocimineto previo sobre las TICs.
+                                </li>
+                                <li class="list2">
+                                    Habilidad para desarrollar actidades manuales con el objetivo de reciclar.
+                                </li>
+                                <li class="list2">
+                                    Habilidad para trabajar en equipo.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FIN PERFIL DE INGRESO -->
+
+            <!-- AÑOS DE ESTUDIO -->
+            <div>
+                <div class="row mt-5" id="anios_estudio">
+                    <div class="col">
+                        <div class="w3-container">
+                            <h2>Años de estudio</h2>
+
+                            <div class="w3-row">
+                                <a href="javascript:void(0)" onclick="openYear(event, 'FirstYear');">
+                                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
+                                        Primero
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" onclick="openYear(event, 'SecondYear');">
+                                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
+                                        Segundo
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" onclick="openYear(event, 'ThirdYear');">
+                                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
+                                        Tercero
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="FirstYear" class="w3-container year" style="display: none;">
+                                <h2>Primer año</h2>
+                                <p>
+                                    El primer año cuenta con al rededor de 14 materias en las cuales 5 son básicas incluyendo inglés y 9 módulos en los cuales esta incluido el lenguaje de programacion "Qbasic " y una breve inducción al mantenimiento de Hardware.
+                                </p>
+                            </div>
+
+                            <div id="SecondYear" class="w3-container year " style="display: none;">
+                                <h2>Segundo Año</h2>
+                                <p>
+                                    El segundo año de bachillerato consiste con la misma cantidad de materias que en primero, solo que se modifica un poco los modulos impartidos agregando el lenguaje de programación de "Visual FoxPro "
+                                </p>
+                            </div>
+
+                            <div id="ThirdYear" class="w3-container year " style="display: none;">
+                                <h2>Tercer año</h2>
+                                <p>
+                                    El tercer año solo consta con los 9 modulos en los cuales se destaca la creacion y diseño de centro de datos y las ERP, monitoreo de redes y auditorias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="container ">
+                            <div class="parent ">
+                                <img class="image1-year d-flex justify-content-end " src="/assets/images/primero.jpg " />
+                                <img class="image3-year " src="assets/images/segundo.jpeg " />
+                                <img class="image2-year " src="assets/images/JAJA.jpg " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FERIAS GENERAL-->
+        <div>
+            <div class="row " id="ferias ">
+                <div class="col-4 ">
+                    <img src="assets/images/ferias.jpg " class="img-general " alt=" ">
+                </div>
+                <div class="col-8 ">
+                    <h1>Ferias</h1>
+                    <p>Estas son una de las fechas más importante en el calendario de actividades del bachillerato, son actividades que nos identifican dentro del instituto, ya que se fundamentaron desde los inicios del bachillerato. La mayoria de estas
+                        actividades han sido de muchas ayuda para la construcción del mismo bachillerato, como la construcción de aulas y mantenimiento de los equipos, muchas de estas actividades son para recaudar fondos.</p>
+                </div>
+            </div>
+        </div>
+        <!--FIN FERIAS GENERAL-->
+
+        <!--FERIAS ESPECIFICAS-->
+        <div class="mt-5 ">
+            <h1 class="d-flex justify-content-center ">Nuestras Ferias</h1>
+            <div id="carouselExampleControls " class="carousel slide " data-bs-ride="carousel ">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active h-100 ">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                            <div class="col ">
+                                <div class="card h-100 ">
+                                    <img src="assets/images/cosplay.jpg " class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">COSPLAY</h5>
+                                        <p class="card-text ">Son eventos que permiten a nuestros alumnos obtener una calificación de una forma divertida que además atrae mucho la atención del público, por lo que algunos cosplays se han hecho para recaudar fondos. De esta
+                                            manera damos a conocer la creatividad de nuestros alumnos y en todos nuestros cosplays se premian a los personajes más creativos. Esta actividad se viene realizando desde el 2016.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ">
+                                <div class="card h-100 ">
+                                    <img src="assets/images/tierra.jpg " class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">DIA DE LA TIERRA</h5>
+                                        <p class="card-text ">Un día en el que se convive como una familia y no como secciones separadas, además enseñamos a nuestros alumnos a cuidar y amar el planeta tierra. Entre las actividades que se relizan se pueden mencionar los proyectos
+                                            ecológicos que los alumnos presentan y el desayuno en el que conviven tanto alumnos como docentes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ">
+                                <div class="card h-100 ">
+                                    <img src="assets/images/emprendedurismo.jpg " class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">FERIA DE EMPRENDEDURISMO</h5>
+                                        <p class="card-text ">Actividad en la que los alumnos ponen en práctica los conocimientos adquiridos en las clases de emprendedurismo, de esta manera también aprenden a generar ingresos sacando provecho de cualquier recurso implementado
+                                            el trabajo en equipo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100 ">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                            <div class="col ">
+                                <div class="card h-100 ">
+                                    <img src="assets/images/logros.jpg " class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">FERIA DE LOGROS</h5>
+                                        <p class="card-text ">Con esta actividad demostramos las capacidades de nuestros alumnos, presentan proyectos que les permiten competir con otros bachilleratos, esta es una de las ferias en la que muchos de nuestros alumnos se dan a
+                                            conocer por sus proyectos de gran utilidad. En la mayoria de estas actividades los alumnos de nuestro bachillerato han obtenido reconocimientos por sus proyectos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ">
+                                <div class="card h-100 ">
+                                    <img src="assets/images/FT.JPG " class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">FERIA TECNOLÓGICA</h5>
+                                        <p class="card-text ">Esta es la actividad que nos da aconocer como el bachillerato ITSI, todos los alumnos trabajan juntos como una sola sección para llevar a cabo esta feria y dar la mejor impresión a los visitantes. Las actividades
+                                            que se pueden encontrar ese día son: Ponencias sobre temas tecnológicos, proyectos y muchas cosas más. Todo hecho por nuestros alumnos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev p-3 " type="button " data-bs-target="#carouselExampleControls " data-bs-slide="prev ">
+                  <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                  <span class="visually-hidden ">Previous</span>
+                </button>
+                <button class="carousel-control-next " type="button " data-bs-target="#carouselExampleControls " data-bs-slide="next ">
+                  <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                  <span class="visually-hidden ">Next</span>
+                </button>
+            </div>
+        </div>
+        <!--END FERIAS-->
+
+        <!--DOCENTES GENERAL-->
+        <div>
+            <div class="row mt-5 " id="docentes ">
+                <div class="col-8 ">
+                    <h1>DOCENTES</h1>
+                    <p>Este es el equipo que conforman los docentes fundamentales que imparten los modulos, preocupandose por el buen desempeño y mantenimiento del legado ITSI. Son de mucha ayuda para el crecimiento del bachillerato, ya que apoyan al mejor
+                        rendimiento del mismo desde el inicio, administrando las actividades y la promoción de la especialidad.</p>
+                </div>
+                <div class="col-4 ">
+                    <img src="assets/images/prof.jpg " class="img-general " alt=" ">
+                </div>
+            </div>
+        </div>
+        <!--FIN DOCENTES GENERAL-->
+
+        <!--DOCENTES-->
+        <div class="container mt-5 mb-4 ">
+            <h1 class="d-flex justify-content-center ">Nuestros Docentes</h1>
+            <div class="row d-flex align-items-center mx-3 h-100">
+                <div class="row mt-5">
+                    <div class="col-6 ">
+                        <div class="row d-flex align-items-center ">
+                            <div class="col-3 d-flex justify-content-center ">
+                                <img class="docente-img " src="assets/images/lor.PNG " alt="Avatar ">
+                            </div>
+                            <div class="col-9 ">
+                                <h5 class="docente-nombre">Roberto Arturo Arias</h5>
+                                <p class="docente-cargo"> Coordinador de ITSI</p>
+                                <p>"El bachillerato en ITSI se volvió mi segunda familia "</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <div class="row d-flex align-items-center ">
+                            <div class="col-3 d-flex justify-content-center ">
+                                <img class="docente-img " src="assets/images/ing.PNG " alt="Avatar ">
+                            </div>
+                            <div class="col-9 ">
+                                <h5 class="docente-nombre">Ing. Marta Minero</h5>
+                                <p class="docente-cargo"> Docente de redes informáticas</p>
+                                <p>"Siempre me he preocupado por el bienestar del bachillerato "</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 ">
+                    <div class="col-6 ">
+                        <div class="row d-flex align-items-center ">
+                            <div class="col-3 d-flex justify-content-center ">
+                                <img class="docente-img " src="assets/images/oran.PNG " alt="Avatar ">
+                            </div>
+                            <div class="col-9 ">
+                                <h5 class="docente-nombre">Lic. Oscar Orantes</h5>
+                                <p class="docente-cargo"> Docente en emprendedurismo</p>
+                                <p>"Busco la superación de nuestros alumnos "
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <div class="row d-flex align-items-center ">
+                            <div class="col-3 d-flex justify-content-center ">
+                                <img class="docente-img " src="assets/images/nico.PNG " alt="Avatar ">
+                            </div>
+                            <div class="col-9 ">
+                                <h5 class="docente-nombre">Nicolas Trejo</h5>
+                                <p class="docente-cargo ">Docente de programación</p>
+                                <p>"He ganado muchas experiencias a lo largo de mi trabajo "</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN DOCENTES-->
+
+        <!--CURSOS GENERAL-->
+        <div>
+            <div class="row mt-5 " id="cursos ">
+                <div class="col-4 mt-5 ">
+                    <img src="assets/images/cursos.jpg " class="img-general " alt=" ">
+                </div>
+                <div class="col-8 mt-5 ">
+                    <h1>CURSOS EXTERNOS</h1>
+                    <p>El bachillerato cuenta con una extensa lista de programas de becas para distintos tipos de desallorro personal en el transcurso de los 3 años. Uno de los programas más importantes aliados con nuestra especialidad, brindandonos becas
+                        para cursos muy importantes, como el desarrollo de páginas web o manipulación de photoshop, adobe, entre otros.</p>
+                </div>
+            </div>
+        </div>
+        <!--CURSOS GENERAL-->
+
+        <!--CURSOS-->
+        <div class="mt-5 ">
+
+            <h1 class="d-flex justify-content-center ">Nuestros Cursos</h1>
+            <div class="card-group ">
+                <div class="card bg-card ">
+                    <div class="card-body bg-card-1 ">
+                        <h4 class="card-title ">CURSOS INSAFORP</h4>
+                        <p class="card-text ">En los ultimos años los cursos de INSAFORP han sido de mucha ayuda para los alumnos, brindando becas gratuitas para cursos de tipo informaticos, en la cuales son muy accesibles a las horas clases o hasta impartiendolos en dias
+                            sábados, en la lista de los cursos mas fundamentales estan: maquetación de páginas web, programación de videojuegos, ect.</p>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body bg-card-2 ">
+                        <h4 class="card-title ">FUNDACIÓN HELLER KELLER</h4>
+                        <p class="card-text ">La Fundación Hellen Keller El Salvador, desde el inicio del bachillerato ha participado en las actividades recreativas para la beneficencia y propagación de la educación de los jóvenes talentos que demuestran un desempeño único
+                            en todas sus actividades, apoyandolos con becas de todo tipo, las cuales ayudarán al crecimiento laboral y de conocimientos de los jovenes.</p>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body bg-card-3 ">
+                        <h4 class="card-title ">EMPLEATECH</h4>
+                        <p class="card-text ">Las becas de EMPLEATECH son una gran oportunidad para nuestros jovenes de tercer año, impartiendo módulos de distintas modalidades, ya sea desde habilidades blandas hasta pasantías en empresas de desarrollo de software, en las
+                            cuales depende de su desempeño poder aplicar a una plaza permanente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FOOTER-->
+        <footer id="footer " class="footer ">
+            <div class="footer-top ">
+                <div class="container ">
+                    <div class="row ">
+                        <!-- Mapa -->
+                        <div class="col-4 ">
+                            <iframe src="https://www.google.com/maps/place/%22Centro+Escolar+INSA%22/@13.9796418,-89.5663954,17z/data=!3m1!4b1!4m5!3m4!1s0x8f62e8969b7f6161:0x30f997c0839b8bef!8m2!3d13.9796418!4d-89.5642067?shorturl=1 " width="120%
+                                    " height="160 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+                        </div>
+
+                        <!-- Datos de contacto -->
+                        <div class="col-4 contact-info ">
+                            <h3>BACHILLERATO ITSI<span></span></h3>
+                            <p>
+                                Insa Bachillerato Industrial, Ave Santa Ana California, Santa Ana <br><br>
+                                <strong>Teléfono: </strong>2445 8300<br>
+                                <strong>Email: </strong>itsi@gmail.com<br>
+                            </p>
+                        </div>
+
+                        <!-- Enlaces -->
+                        <div class="col-3 ">
+                            <h4>Enlaces de utilidad</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right "></i> <a href="# ">Inicio</a></li>
+                                <li><i class="bx bx-chevron-right "></i> <a href="# ">Perfil de Ingreso</a></li>
+                                <li><i class="bx bx-chevron-right "></i> <a href="# ">Docentes</a></li>
+                                <li> <i class="bx bx-chevron-right ">
+                            </i> <a href="# ">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="container d-md-flex py-4 ">
+                <div class="me-md-auto text-center text-md-start ">
+                    <div class="copyright " style="padding-top: 10px ">
+                        © Copyright <strong><span>Bachillerato ITSI</span></strong>. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--FIN FOOTER-->
+    </div>
+
+    <script>
+        function openYear(evt, yearHighS) {
+            let i, x, tablinks;
+            x = document.getElementsByClassName("year");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                    " w3-border-red ",
+                    " "
+                );
+            }
+            document.getElementById(yearHighS).style.display = "block";
+            evt.currentTarget.firstElementChild.className +=
+                " w3-border-red ";
+        }
+        document.getElementById("FirstYear").style.display = "block";
+    </script>
+</body>
+
 </html>
