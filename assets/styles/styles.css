@@ -1,6 +1,7 @@
 /** FONT IMPORT **/
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+
 /** MAIN COLORS **/
 
 :root {
@@ -10,6 +11,8 @@
     --color-blue-light: #c8e6ff;
     --background-color: #ffffff;
 }
+
+
 /**
     FONT CONFIG:
     Best practice to apply the font to the whole document
@@ -229,9 +232,7 @@ html * {
     color: #ffffff !important;
 }
 
-.bg-card-icon {
-
-}
+.bg-card-icon {}
 
 .contact-info {
     margin-left: 7em;
@@ -266,11 +267,13 @@ html * {
     font-size: small;
 }
 
+
 /**
  * ----------------------------------------
  * animation fade-in-fwd
  * ----------------------------------------
  */
+
 @-webkit-keyframes fade-in-fwd {
     0% {
         -webkit-transform: translateZ(-80px);
@@ -283,6 +286,7 @@ html * {
         opacity: 0.7;
     }
 }
+
 @keyframes fade-in-fwd {
     0% {
         -webkit-transform: translateZ(-80px);
@@ -294,4 +298,13 @@ html * {
         transform: translateZ(0);
         opacity: 0.7;
     }
+}
+
+.fila-docente {
+    margin-top: 10%;
+}
+
+.carousel-inner>.carousel-item>img {
+    height: 570px;
+    margin: auto;
 }
