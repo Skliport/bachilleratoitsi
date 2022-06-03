@@ -5,13 +5,15 @@
 /** MAIN COLORS **/
 
 :root {
-    --color-blue-primary: #15429e;
-    --color-blue-accent: #90cdff;
-    --color-blue-dark: #0f436f;
-    --color-blue-light: #c8e6ff;
-    --background-color: #ffffff;
+    --color-black: #101010;
+    --color-black-secondary: #161616;
+    --color-black-alternate: #202020;
+    --border-color: #454545;
+    --color-gray-lighter: #c9c8c4;
+    --color-blue: #0d5b92;
+    --color-yellow: #dbbe02;
+    --title-font-weight: 600;
 }
-
 
 /**
     FONT CONFIG:
@@ -38,16 +40,26 @@ html * {
 }
 
 .border-right {
-    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: 1px solid var(--border-color);
     height: 100px;
 }
 
 .profile {
-    background-color: rgb(142, 141, 141);
+    background-color: var(--color-black-alternate);
     margin-top: 90px;
     width: 750px;
     margin-left: -140px;
     position: absolute;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.text-title {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-weight: var(--title-font-weight);
+    text-transform: uppercase;
 }
 
 .list {
@@ -57,6 +69,10 @@ html * {
 
 .list2 {
     padding-left: 1.3em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
 }
 
 .list2:before {
@@ -68,7 +84,7 @@ html * {
     /* same as padding-left set on li */
     width: 1.3em;
     /* same as padding-left set on li */
-    color: green;
+    color: var(--color-yellow);
 }
 
 .parent {
@@ -84,6 +100,100 @@ html * {
     width: 500px;
     margin-left: 30px;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .image1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile {
+        width: 100%;
+        position: unset;
+    }
+
+    .border-right {
+        border-right: none;
+    }
+
+    .bg {
+        object-fit: cover;
+        height: 300px;
+    }
+
+    #ferias div {
+        padding: 1rem 0;
+    }
+
+    .carousel-item img {
+        height: auto;
+        width: 100%;
+    }
+
+    .contact-info {
+        margin-left: 0 !important;
+    }
+
+    .image3-year {
+        left: 0 !important;
+    }
+
+    .text-mobile {
+        padding: 0 0.5rem;
+    }
+
+    .mb-mobile {
+        margin-bottom: 1rem;
+    }
+
+    .mt-mobile {
+        margin-top: 1rem;
+    }
+
+    .image1 {
+        margin: unset;
+    }
+
+    .profile {
+        margin-left: unset;
+        margin-top: 2.5rem;
+    }
+
+    .w3-row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .w3-row a {
+        width: 33%;
+    }
+
+    .w3-container.year{
+        height: 200px;
+    }
+
+    .image3-year {
+        top: 420px !important;
+        height: 190px !important98;
+    }
+
+    .image2-year {
+        top: 270px !important;
+        left: 124px !important;
+    }
+
+    .sm-center {
+        text-align: center;
+    }
+
+    .card-body {
+        height: unset !important;
+    }
+
+    .carousel-inner > .carousel-item > img {
+        height: 250px !important;
+    }
 }
 
 .image1-year {
@@ -144,7 +254,7 @@ html * {
     .card img {
         width: 100%;
         height: 300px;
-        object-fit: contain;
+        object-fit: cover;
     }
 }
 
@@ -161,8 +271,8 @@ html * {
 
 .docente-img {
     border-radius: 50%;
-    height: 130px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     object-fit: cover;
     object-position: 1% 10%;
 }
@@ -232,7 +342,19 @@ html * {
     color: #ffffff !important;
 }
 
-.bg-card-icon {}
+.card-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    height: 300px;
+    padding: 1.25rem 1.25rem 2rem;
+}
+
+.bg-card-icon {
+    color: #f8f9fa;
+}
 
 .contact-info {
     margin-left: 7em;
@@ -240,10 +362,6 @@ html * {
 
 .footer {
     margin-top: 8em !important;
-}
-
-.carousel-inner {
-    height: 600px !important;
 }
 
 .card-principal {
@@ -262,11 +380,14 @@ html * {
     font-weight: bold;
 }
 
+.nuestros-cursos-body {
+    height: auto !important;
+}
+
 .docente-cargo {
     font-weight: 400;
     font-size: small;
 }
-
 
 /**
  * ----------------------------------------
@@ -304,7 +425,72 @@ html * {
     margin-top: 10%;
 }
 
-.carousel-inner>.carousel-item>img {
+.carousel-inner > .carousel-item > img {
     height: 570px;
     margin: auto;
+}
+
+.bg-insa-nav,
+.background-insa {
+    background-color: var(--color-black);
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.background-insa__variant-1 {
+    background-color: var(--color-black-alternate);
+}
+
+.icon-color-1 {
+    color: var(--color-yellow);
+}
+
+.border-yellow-insa {
+    border-color: var(--color-yellow) !important;
+}
+
+.contrast-dark__hover {
+    background-color: #282828db;
+    transition: 0.7s all;
+}
+
+.contrast-dark__hover:hover {
+    background-color: #363636;
+}
+
+.contrast-dark {
+    background-color: #363636db;
+}
+
+.year {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.seccion1 {
+    background-color: var(--color-black-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
