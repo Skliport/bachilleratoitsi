@@ -24,6 +24,11 @@ html * {
     font-family: 'Open Sans', sans-serif !important;
 }
 
+.fade {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
 .bg {
     width: 100%;
     z-index: 0;
@@ -169,7 +174,7 @@ html * {
         width: 33%;
     }
 
-    .w3-container.year{
+    .w3-container.year {
         height: 200px;
     }
 
@@ -193,6 +198,10 @@ html * {
 
     .carousel-inner > .carousel-item > img {
         height: 250px !important;
+    }
+
+    .carousel-desktop {
+        display: none !important;
     }
 }
 
@@ -256,6 +265,10 @@ html * {
         height: 300px;
         object-fit: cover;
     }
+
+    .carousel-mobile {
+        display: none !important;
+    }
 }
 
 .image-carousel {
@@ -263,6 +276,10 @@ html * {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.carousel-mobile-item {
+    height: 550px !important;
 }
 
 .card-text {
