@@ -15,6 +15,7 @@
     --title-font-weight: 600;
 }
 
+
 /**
     FONT CONFIG:
     Best practice to apply the font to the whole document
@@ -112,94 +113,73 @@ html * {
         width: 100%;
         height: auto;
     }
-
     .profile {
         width: 100%;
         position: unset;
     }
-
     .border-right {
         border-right: none;
     }
-
     .bg {
         object-fit: cover;
         height: 300px;
     }
-
     #ferias div {
         padding: 1rem 0;
     }
-
     .carousel-item img {
         height: auto;
         width: 100%;
     }
-
     .contact-info {
         margin-left: 0 !important;
     }
-
     .image3-year {
         left: 0 !important;
     }
-
     .text-mobile {
         padding: 0 0.5rem;
     }
-
     .mb-mobile {
         margin-bottom: 1rem;
     }
-
     .mt-mobile {
         margin-top: 1rem;
     }
-
     .image1 {
         margin: unset;
     }
-
     .profile {
         margin-left: unset;
         margin-top: 2.5rem;
     }
-
     .w3-row {
         display: flex;
         justify-content: space-around;
     }
-
     .w3-row a {
         width: 33%;
     }
-
     .w3-container.year {
         height: 200px;
     }
-
     .image3-year {
         top: 420px !important;
         height: 190px !important98;
     }
-
     .image2-year {
         top: 270px !important;
         left: 124px !important;
     }
-
     .sm-center {
         text-align: center;
     }
-
     .card-body {
         height: unset !important;
     }
-
-    .carousel-inner > .carousel-item > img {
+    .carousel-inner>.carousel-item>img {
         height: 250px !important;
     }
-
     .carousel-desktop {
         display: none !important;
     }
@@ -265,7 +245,6 @@ html * {
         height: 300px;
         object-fit: cover;
     }
-
     .carousel-mobile {
         display: none !important;
     }
@@ -314,7 +293,7 @@ html * {
 }
 
 .bg-card-3 {
-    background: url('/assets/images/ET.jpg');
+    background: url('/assets/images/glasswing.png');
 }
 
 .bg-card-1,
@@ -406,6 +385,7 @@ html * {
     font-size: small;
 }
 
+
 /**
  * ----------------------------------------
  * animation fade-in-fwd
@@ -442,7 +422,7 @@ html * {
     margin-top: 10%;
 }
 
-.carousel-inner > .carousel-item > img {
+.carousel-inner>.carousel-item>img {
     height: 570px;
     margin: auto;
 }
@@ -490,11 +470,13 @@ html * {
     border-radius: 1rem;
 }
 
+
 /**
  * ----------------------------------------
  * animation fade-in
  * ----------------------------------------
  */
+
 @-webkit-keyframes fade-in {
     0% {
         opacity: 0;
@@ -503,6 +485,7 @@ html * {
         opacity: 1;
     }
 }
+
 @keyframes fade-in {
     0% {
         opacity: 0;
