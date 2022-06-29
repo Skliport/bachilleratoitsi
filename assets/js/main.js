@@ -104,9 +104,9 @@ onload = () => {
 //=================================
 // ANIMATIONS
 //=================================
-const animation = ScrollReveal({ ...configs });
+const animation = ScrollReveal({ ...configs, ...noAnimationReset });
 
-animation.reveal('.seccion1', { ...d200, ...noAnimationReset });
+animation.reveal('.seccion1', { ...d200 });
 
 animation.reveal('.image-year', { ...d200, ...i200 });
 
